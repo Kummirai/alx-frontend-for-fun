@@ -1,7 +1,24 @@
 a{
   text-decoration: none;
+  color: rgb(126, 15, 15);
+  width: fit-content;
 }
 
-a:hover{
-  color: rgb(185, 39, 39);
+h2{
+  position: relative;
+  width: fit-content;;
+}
+a::before{
+  content: "" ;
+  background-color: rgb(126, 15, 15);
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  transition: width 0.5s ease;
+}
+
+
+a:hover::before{
+  width: 7rem;
 }
